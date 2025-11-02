@@ -1,0 +1,42 @@
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: var(--ion-color-medium);
+  }
+}
+
+.feature-card {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    color: var(--ion-color-primary);
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem 0;
+  }
+
+  p {
+    margin: 0;
+    color: var(--ion-color-medium);
+    font-size: 0.9rem;
+  }
+}
+
+.info-card {
+  margin-top: 2rem;
+}

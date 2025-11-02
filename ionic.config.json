@@ -1,0 +1,7 @@
+{
+  "name": "reservation-rdv-psychologu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

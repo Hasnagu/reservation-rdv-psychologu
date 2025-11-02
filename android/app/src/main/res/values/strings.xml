@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">reservation-rdv-psychologu</string>
+    <string name="title_activity_main">reservation-rdv-psychologu</string>
+    <string name="package_name">com.psycare.app</string>
+    <string name="custom_url_scheme">com.psycare.app</string>
+</resources>

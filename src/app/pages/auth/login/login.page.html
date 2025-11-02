@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Connexion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="login-container">
+    <h1>Bienvenue sur Psychologu</h1>
+    <p>Connectez-vous à votre compte</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input
+          type="email"
+          formControlName="email"
+          placeholder="votre@email.com">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Mot de passe</ion-label>
+        <ion-input
+          [type]="showPassword ? 'text' : 'password'"
+          formControlName="password"
+          placeholder="Votre mot de passe">
+        </ion-input>
+        <ion-button
+          fill="clear"
+          slot="end"
+          (click)="togglePasswordVisibility()">
+          <ion-icon
+            [name]="showPassword ? 'eye-off' : 'eye'">
+          </ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <ion-button
+        type="submit"
+        expand="block"
+        class="ion-margin-top"
+        [disabled]="!loginForm.valid">
+        Se connecter
+      </ion-button>
+    </form>
+
+    <div class="register-link ion-text-center ion-margin-top">
+      <p>Pas de compte ?
+        <a (click)="goToRegister()">Créer un compte</a>
+      </p>
+    </div>
+  </div>
+</ion-content>

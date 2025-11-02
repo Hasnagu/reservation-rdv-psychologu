@@ -1,0 +1,41 @@
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    text-align: center;
+    color: var(--ion-color-medium);
+    margin-bottom: 2rem;
+  }
+
+  .role-selection {
+    ion-segment {
+      --background: var(--ion-color-light);
+    }
+  }
+}
+
+.login-link {
+  a {
+    color: var(--ion-color-primary);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

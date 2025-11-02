@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Tableau de Bord Psychologue</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="welcome-section">
+    <h1>Bonjour Dr. {{ user?.displayName }} 👨‍⚕️</h1>
+    <p>Bienvenue sur votre espace professionnel</p>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="feature-card">
+          <ion-card-content>
+            <ion-icon name="today-outline" class="feature-icon"></ion-icon>
+            <h3>Mes RDV</h3>
+            <p>Gérer les rendez-vous</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="feature-card">
+          <ion-card-content>
+            <ion-icon name="time-outline" class="feature-icon"></ion-icon>
+            <h3>Disponibilités</h3>
+            <p>Gérer mon agenda</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="stats-card">
+    <ion-card-header>
+      <ion-card-title>Aujourd'hui</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Rendez-vous prévus</ion-label>
+          <ion-badge slot="end" color="primary">0</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-label>En attente</ion-label>
+          <ion-badge slot="end" color="warning">0</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-label>Confirmés</ion-label>
+          <ion-badge slot="end" color="success">0</ion-badge>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
